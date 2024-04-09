@@ -128,25 +128,46 @@ La indexación es el proceso por el cual Google invita a un sitio web a formar p
 
 Google analiza el contenido de las páginas, como textos, imágenes y archivos multimedia, y almacena esta información en su índice, que es una base de datos con todas las URL que considera relevantes. La indexación es fundamental para asegurar que un sitio web existe y es visible en los resultados de búsqueda.
 
-¿Cómo verificar si un sitio web está indexado en Google?
+### ¿Cómo verificar si un sitio web está indexado en Google?
+
 Para verificar si un sitio web está indexado en Google, basta con ingresar en la barra de búsqueda de Google la palabra "site", seguida de dos puntos y el nombre de dominio del sitio que se desea verificar. Si se muestra una lista de resultados relacionados con el sitio, significa que está indexado y existe en Google.
 
-¿Qué es un archivo sitemap y cómo ayuda en el proceso de indexación?
+### ¿Qué es un archivo sitemap y cómo ayuda en el proceso de indexación?
+
 Un archivo sitemap es un documento que informa a Google qué URLs o archivos de un sitio web son importantes. Al enviar un sitemap a Google, se le pide que indexe ese contenido específico.
 
 Hay diferentes formatos en los que se puede presentar un sitemap, como un código o una lista de URLs. El sitemap ayuda a Google a entender la estructura del sitio y a clasificar el contenido de manera más eficiente.
 
-¿Qué son las etiquetas metarobots y cómo afectan la indexación?
+### ¿Qué son las etiquetas metarobots y cómo afectan la indexación?
 Las etiquetas metarobots son directivas que se utilizan para indicarle a Google si debe o no indexar cierto contenido de un sitio web. La directiva noindex impide que Google incluya una URL en su índice de búsqueda, aunque el sitio puede seguir siendo rastreado.
 
 Esta directiva es útil cuando se quiere bloquear la indexación de cierto contenido, como por ejemplo, el carrito de compras vacío de una tienda en línea. Es importante asegurarse de que el sitio web no tenga ningún impedimento para que Google indexe el contenido importante.
 
-¿Cómo acceder a un archivo sitemap de un sitio web?
+### ¿Cómo acceder a un archivo sitemap de un sitio web?
 Para acceder a un archivo sitemap de un sitio web, simplemente se debe escribir en la barra de búsqueda el nombre de dominio del sitio, seguido de "/sitemap.xml". Esto redirigirá directamente al archivo sitemap del sitio. Es importante destacar que no todos los sitios web cuentan con un archivo sitemap, lo cual es una práctica recomendada para asegurar una correcta indexación.
 
-¿Qué buscar en los archivos sitemap de otros sitios web?
+### ¿Qué buscar en los archivos sitemap de otros sitios web?
 Al revisar los archivos sitemap de otros sitios web, es interesante observar cómo se presenta la lista de URLs y cómo se organiza la información.
 
 Algunos sitios pueden tener un formato más técnico, con códigos y codificaciones, mientras que otros pueden presentar una lista simple de URLs. También se puede investigar si el sitio tiene un sitemap en primer lugar, ya que esto es importante para mantener una correcta indexación.
 
 [Extesion de Chrome](https://chromewebstore.google.com/detail/robots-exclusion-checker/lnadekhdikcpjfnlhnbingbkhkfkddkl?pli=1)
+
+Para verificar si un sitio web existe en Google o no, vamos a Google y escribimos site:eldominiodelaweb. Si aparecen resultados ya sabemos que la web está en Google.
+
+Para verificar si el sitio cuenta con URLs importantes no indexables que podrían aportar tráfico orgánico y que deberían ser indexables existe una herramienta: [Spotibo](https://spotibo.com/)
+
+Para analizar y comprender la estructura de navegación de un sitio web, utilizamos una analogía con la puerta principal de una casa y sus habitaciones. Cada habitación representa una URL en el sitio web, mientras que la puerta principal es la página de inicio. La pregunta que debemos hacernos es: ¿qué tan lejos está una habitación de la puerta principal?
+
+Para entender visualmente esta estructura, podemos utilizar una herramienta llamada Screaming Frog. Esta herramienta permite rastrear y analizar un sitio web a través de sus enlaces internos y conocer todas sus URLs. Para utilizarla, simplemente descargamos e instalamos el programa en nuestra computadora y lo ejecutamos.
+
+¿Cómo podemos analizar y conocer la estructura de navegación de un sitio web?
+Mencionar que la versión gratuita de Screaming Frog tiene un límite de 500 URLs, mientras que la versión premium no tiene límites. En la barra de búsqueda de la herramienta, escribimos el nombre de dominio que queremos analizar y hacemos clic en "Empezar".
+
+Una vez finalizado el rastreo, podemos acceder a la sección "Visualizaciones" y seleccionar "Diagrama de rastreo forzado". Aquí podremos ver un gráfico que representa la estructura de navegación del sitio web.
+
+En el diagrama, la página de inicio se encuentra en el centro y muestra información como el título de la página, código de respuesta, H1, H2 y nivel de profundidad. El nivel de profundidad cero corresponde a la página de inicio, mientras que los niveles de profundidad superiores indican la distancia de una URL en relación a la página de inicio.
+
+Si encontramos URLs importantes en niveles de profundidad altos, es recomendable crear enlaces desde la página de inicio u otras páginas cercanas para acercarlas. Esto permitirá que Google acceda fácilmente al contenido y mejore la estructura de navegación del sitio web.
+
+En resumen, el análisis de la estructura de navegación de un sitio web nos ayuda a identificar la distancia entre las URLs y la página de inicio, y nos permite mejorar la accesibilidad del contenido para los motores de búsqueda.
