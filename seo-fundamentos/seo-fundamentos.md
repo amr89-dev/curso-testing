@@ -161,7 +161,8 @@ Para analizar y comprender la estructura de navegación de un sitio web, utiliza
 
 Para entender visualmente esta estructura, podemos utilizar una herramienta llamada Screaming Frog. Esta herramienta permite rastrear y analizar un sitio web a través de sus enlaces internos y conocer todas sus URLs. Para utilizarla, simplemente descargamos e instalamos el programa en nuestra computadora y lo ejecutamos.
 
-¿Cómo podemos analizar y conocer la estructura de navegación de un sitio web?
+### ¿Cómo podemos analizar y conocer la estructura de navegación de un sitio web?
+
 Mencionar que la versión gratuita de Screaming Frog tiene un límite de 500 URLs, mientras que la versión premium no tiene límites. En la barra de búsqueda de la herramienta, escribimos el nombre de dominio que queremos analizar y hacemos clic en "Empezar".
 
 Una vez finalizado el rastreo, podemos acceder a la sección "Visualizaciones" y seleccionar "Diagrama de rastreo forzado". Aquí podremos ver un gráfico que representa la estructura de navegación del sitio web.
@@ -171,3 +172,30 @@ En el diagrama, la página de inicio se encuentra en el centro y muestra informa
 Si encontramos URLs importantes en niveles de profundidad altos, es recomendable crear enlaces desde la página de inicio u otras páginas cercanas para acercarlas. Esto permitirá que Google acceda fácilmente al contenido y mejore la estructura de navegación del sitio web.
 
 En resumen, el análisis de la estructura de navegación de un sitio web nos ayuda a identificar la distancia entre las URLs y la página de inicio, y nos permite mejorar la accesibilidad del contenido para los motores de búsqueda.
+
+### Factores criticos para aparecer en Google
+
+- Optimizacion para mobiles y certificados SSL
+
+#### El primer factor es la versión de tu web para móviles.
+
+Esto es porque la mayor parte del tráfico que vas a tener viene de dispositivos celulares. En su documentación, Google menciona: “Siempre que puede, Google indexa y posiciona las versiones para móviles del contenido de los sitios, rastreados con el agente de smartphones.”
+
+Google tiene una guía que se llama “Indexación centrada en móviles”. ¿Por qué es importante tener un sitio web adaptable para móviles?
+
+Porque Google, con su algoritmo, prioriza los sitios adaptados para móviles.
+Porque de esta forma podemos ofrecer una buena experiencia de usuario.
+Relacionado con el primer punto, porque actualmente la mayor cantidad del tráfico que tienen los sitios web es desde dispositivos móviles.
+Además, existe lo que se conoce Pogo Sticking que es cuando una persona realiza una búsqueda, ingresa a un resultado, revisa el sitio web, vuelve a la página de búsqueda, le da a otro resultado. Esto para Google no es una buena señal acerca de tu sitio web porque le está indicando al algoritmo que el primer resultado que visitó no está satisfaciendo la intención de búsqueda. Entonces, al no satisfacer esa intención de búsqueda Google lo ve como señal de que el contenido no merece estar tan bien posicionado.
+
+Una herramienta de Google para saber si tu sitio web está optimizado para móviles es esta: https://search.google.com/test/mobile-friendly
+
+Material complementario: Informe "Usabilidad móvil”.
+
+#### El segundo factor crítico para aparecer en Google es tener una web segura.
+
+Esto significa que tu sitio no cargue por http sino por https. Según Google: “Una buena parte de nuestros esfuerzos se centran en asegurar los sitios web a los que acceden los usuarios a través de Google sean seguros.”
+
+La forma más sencilla de verificar si un sitio web está cargando por su versión segura o no es en la barra de direcciones que están en el sitio web, dar clic en el candadito al lado del dominio.
+
+Como bonus, otro factor crítico es la velocidad de carga. Es decir, a mayor rapidez de carga mejor experiencia de usuario. Una herramienta gratuita para verificar la velocidad de carga es https://gtmetrix.com/
