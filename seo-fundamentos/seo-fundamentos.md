@@ -199,3 +199,36 @@ Esto significa que tu sitio no cargue por http sino por https. Según Google: �
 La forma más sencilla de verificar si un sitio web está cargando por su versión segura o no es en la barra de direcciones que están en el sitio web, dar clic en el candadito al lado del dominio.
 
 Como bonus, otro factor crítico es la velocidad de carga. Es decir, a mayor rapidez de carga mejor experiencia de usuario. Una herramienta gratuita para verificar la velocidad de carga es https://gtmetrix.com/
+
+### Cómo Google ve tu Página: la Web Semántica
+
+Google observa el sitio web diferente a como lo vemos nosotros. Los sitios web, principalmente, cuando se muestran en nuestro navegador, utilizan tres tipos de tecnología: HTML, CSS, y JavaScript.
+
+Cuando quitamos el JavaScript, las funcionalidades que se componen con JavaScript, desaparecen. Cuando desactivamos CSS desactivamos los estilos que tiene un sitio web.
+
+En cuanto a HTML, lo importante es utilizar los elementos correctos para que Google los pueda entender. El lenguaje de HTML está compuesto de etiquetas. Para escribir un título, usamos la etiqueta H1 por ejemplo. Lo mismo con el resto de los subtitulos y etiquetas de H2 a H6.
+
+El proceso de rastreo que hace Google tiene tres fases un poco más detalladas de lo que hemos visto hasta ahora en el curso.
+
+Google lo que hace después de encontrar las URL, las pone en una fila de rastreo, y las rastrea, las reconoce, entra y mira cuáles son esos elementos que componen la web (títulos, subtítulos, párrafos, etc) para entenderlo y llevarlo al índice (segundo paso). Hay algunos sitios web que están construidos con demasiados elementos en JavaScript que se muestran al usuario y esto puede dificultar que Google no pueda encontrar los elementos de HTML, por ejemplo. ¿Cuál es la desventaja de estos sitios web? Que Google se va a demorar mucho más en mostrar su información y, además, suelen tener problemas de posicionamiento.
+Para verificar si los elementos del sitio web cargan para Google, usamos una extensión de Chrome: https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm?hl=es Una herramienta adicional para verificar cuáles son las diferentes tecnologías que tiene una página es https://www.wappalyzer.com/
+
+## Estrategia de SEO
+
+Estrategia de SEO:
+Qué vamos a posicionar
+Intención de búsqueda: viaje del usuario
+Conciencia exploración: casual
+Evaluación compra: intención
+Todo esto se le conoce como búsquedas informativas:
+Casual:
+informativa: conciencia
+investigativa: exploración
+Intención:
+comercial-local: evaluación
+Transaccional y navegación: compra
+Para posicionarnos debemos definir el contenido, que es saber qué buscan las personas
+La clave del SEO es identificar el tipo de respuesta que necesitas crear, para las búsquedas que quieres posicionar, al saber esto sabremos cómo posicionar
+Las herramientas que nos ayudan a esto es:
+Mangools: mangools . com
+Usando el SERPChecker
