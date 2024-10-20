@@ -10,7 +10,7 @@ describe("Test for books endopoint", () => {
   let database = null;
   beforeAll(async () => {
     app = createApp();
-    server = app.listen(3001);
+    server = app.listen(3002);
     const client = new MongoClient(MONGO_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
