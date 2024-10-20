@@ -38,6 +38,12 @@ class MongoLib {
     return this.get(collection, rta.insertedId);
   }
 
+  async createMany(collection, data) {
+    const db = await this.connect();
+    const rta = await db.collection(collection).insertMany(data);
+    return this.getAll(collection, {});
+  }
+
   async update(collection, id, data) {
     const db = await this.connect();
     await db

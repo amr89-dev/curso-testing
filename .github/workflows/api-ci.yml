@@ -1,0 +1,57 @@
+name: API CI
+
+#on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "./api/**"
+      - ".github/workflows/api-ci.yml"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "./api/**"
+
+defaults:
+  run:
+    working-directory: ./api
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: "npm"
+          cache-dependency-path: "./api/package-lock.json"
+      - name: Install dependencies
+        shell: bash
+        run: npm ci
+      - name: Run tests
+        shell: bash
+        run: npm run test
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: "npm"
+          cache-dependency-path: "./api/package-lock.json"
+      - name: Install dependencies
+        shell: bash
+        run: npm ci
+      - name: Run lint
+        shell: bash
+        run: npm run lint
