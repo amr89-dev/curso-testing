@@ -55,3 +55,28 @@ jobs:
       - name: Run lint
         shell: bash
         run: npm run lint
+  e2e-tests:
+    runs-on: ubuntu-latest
+    container:
+      image: node:16
+    services:
+      mongo:
+        image: mongo:4.4
+        env:
+          MONGO_INITDB_ROOT_USERNAME: root
+          MONGO_INITDB_ROOT_PASSWORD: root123
+        ports:
+          - 27017:27017
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        shell: bash
+        run: npm ci
+      - name: Run tests
+        shell: bash
+        run: npm run test:e2e
+        env:
+          MONGO_URL: mongodb://root:root123@mongo:27017?retryWrites=true&writeConcern=majority
+          MONGO_DB_NAME: demo
