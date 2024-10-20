@@ -1,6 +1,6 @@
 const { genertaManyBooks, generateOneBook } = require("../dataFake/books.fake");
-const service = require("./books.service");
-/* 
+const Service = require("./books.service");
+/*
 const fakeBooks = [
   {
     id: "1",
@@ -16,21 +16,23 @@ const fakeBooks = [
   },
 ]; */
 
-//👇🏽 Esto es un espia y se puede usar para hacer pruebas de caja blanca
+// 👇🏽 Esto es un espia y se puede usar para hacer pruebas de caja blanca
 const mockSpyGetAll = jest.fn();
 
-/*  Estos son los servicios "fake" que se le pasaran al mock de mas abajo, podemos elegir los metodos que querramos probar
+/*  Estos son los servicios "fake" que se pasaran al mock de abajo,
+  podemos elegir los metodos que querramos probar
 const MongoLibStub = {
   getAll: () => [...fakeBooks],
   create: () => {},
 }; */
 
-const MongoLibStub = {
+/* const MongoLibStub = {
   getAll: mockSpyGetAll, // 👈🏽 De esta manera se le pasa directamente el espia al metodo
   create: () => {},
-};
+}; */
 
-/* //👇🏽Esta es la manera de "mockear" o suplantar los servicios que en este caso traen información de la base de datos
+/* //👇🏽Esta es la manera de "mockear" o suplantar los servicios que en este caso traen
+ información de la base de datos
 jest.mock("../lib/mongo.lib", () =>
   jest.fn().mockImplementation(() => MongoLibStub)
 ); */
@@ -45,40 +47,40 @@ jest.mock("../lib/mongo.lib", () =>
 describe("Test for books service", () => {
   let BooksService;
 
-  //Arrange
+  // Arrange
   beforeEach(() => {
-    BooksService = new service();
-    jest.clearAllMocks(); //👈🏽 Esto se usa para que cada vez que se ejecuta un test se limpia el estado
+    BooksService = new Service();
+    jest.clearAllMocks(); // cada vez que se ejecuta un test se limpia el estado
   });
-  //Act
+  // Act
 
   describe("test fot getAll", () => {
     test("should return an array of books", async () => {
-      //Arrange
+      // Arrange
 
       const fakeBooks = genertaManyBooks(5);
 
       mockSpyGetAll.mockResolvedValue(fakeBooks);
-      //Act
+      // Act
       const books = await BooksService.getBooks({});
       console.log(books);
-      //Assert
+      // Assert
       expect(books.length).toEqual(fakeBooks.length);
       expect(mockSpyGetAll).toHaveBeenCalled();
       expect(mockSpyGetAll).toHaveBeenCalledTimes(1);
       expect(mockSpyGetAll).toHaveBeenCalledWith("books", {});
     });
     test("should return a name of the book", async () => {
-      //Arrange
+      // Arrange
       const book = generateOneBook();
       mockSpyGetAll.mockResolvedValue(book);
 
-      //Act
+      // Act
       const books = await BooksService.getBooks();
       console.log({ books, book });
-      //Assert
+      // Assert
       expect(books.title).toEqual(book.title);
     });
   });
-  //Assert
+  // Assert
 });

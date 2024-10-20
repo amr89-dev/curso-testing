@@ -10,7 +10,7 @@ const genertaManyBooks = (size) => {
   const limit = size ?? 10;
   const books = [];
 
-  for (let index = 0; index < limit; index++) {
+  for (let index = 0; index < limit; index += 1) {
     books.push(generateOneBook());
   }
 

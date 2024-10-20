@@ -41,7 +41,7 @@ class MongoLib {
   async createMany(collection, data) {
     const db = await this.connect();
     const rta = await db.collection(collection).insertMany(data);
-    return this.getAll(collection, {});
+    return this.getAll(rta, {});
   }
 
   async update(collection, id, data) {

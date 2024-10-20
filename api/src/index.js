@@ -10,5 +10,5 @@ app.listen(
       console.error("Error: ", err);
     }
   },
-  console.timeLog(`Server is running on port ${config.port}`)
+  console.timeLog(`Server is running on port ${config.port}`),
 );
